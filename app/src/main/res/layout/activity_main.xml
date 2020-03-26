@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/image_view_linear_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:weightSum="5">
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="@drawable/kitchen_foreground"/>
+        <ImageView
+            android:id="@+id/laptop_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/laptop_foreground"/>
+        <ImageView
+            android:id="@+id/train_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/train_foreground"/>
+        <ImageView
+            android:id="@+id/watch_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/watch"/>
+        <ImageView
+            android:id="@+id/menu_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/menu_foreground"/>
+    </LinearLayout>
+
+    <fragment
+
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/image_view_linear_layout_bottom" >
+
+        <ScrollView
+
+            >
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        />
+    </fragment>
+</RelativeLayout>
